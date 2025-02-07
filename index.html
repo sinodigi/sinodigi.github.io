@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮流科技上网导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background: #f5f6fa;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2d3436;
+            margin: 40px 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .category {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 35px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin: -10px 0 25px 0;
+            display: inline-block;
+            font-size: 1.4em;
+            position: sticky;
+            top: 10px;
+            z-index: 1;
+        }
+
+        .digital h2 { background: linear-gradient(135deg, #3498db, #2980b9); }
+        .tech h2 { background: linear-gradient(135deg, #27ae60, #219a52); }
+        .game h2 { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+        .ai h2 { background: linear-gradient(135deg, #e67e22, #d35400); }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        a {
+            color: #2d3436;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s;
+            background: #f8f9fa;
+            border: 1px solid #eee;
+        }
+
+        a:hover {
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateX(8px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>潮流科技上网导航</h1>
+
+        <!-- 数码产品 (45站) -->
+        <div class="category digital">
+            <h2>📱 数码产品</h2>
+            <div class="links">
+                <a href="https://www.zhihu.com" target="_blank">中关村在线</a>
+                <a href="https://www.smzdm.com" target="_blank">什么值得买</a>
+                <a href="https://www.jd.com" target="_blank">京东数码</a>
+                <a href="https://www.tmall.com" target="_blank">天猫数码</a>
+                <a href="https://www.dgtle.com" target="_blank">数字尾巴</a>
+                <a href="https://www.pconline.com.cn" target="_blank">太平洋电脑</a>
+                <a href="https://www.igao7.com" target="_blank">爱搞机</a>
+                <a href="https://www.chiphell.com" target="_blank">Chiphell</a>
+                <a href="https://www.feng.com" target="_blank">威锋网</a>
+                <a href="https://www.zealer.com" target="_blank">ZEALER</a>
+                <a href="https://www.mi.com" target="_blank">小米商城</a>
+                <a href="https://www.huawei.com" target="_blank">华为商城</a>
+                <a href="https://www.apple.com/cn" target="_blank">苹果官网</a>
+                <a href="https://www.samsung.com/cn" target="_blank">三星中国</a>
+                <a href="https://www.nintendo.com.hk" target="_blank">任天堂香港</a>
+                <a href="https://www.sony.com.cn" target="_blank">索尼中国</a>
+                <a href="https://www.dji.com/cn" target="_blank">大疆创新</a>
+                <a href="https://www.goPro.com" target="_blank">GoPro中国</a>
+                <a href="https://www.oneplus.com/cn" target="_blank">一加官网</a>
+                <a href="https://www.oppo.com/cn" target="_blank">OPPO官网</a>
+                <a href="https://www.vivo.com.cn" target="_blank">vivo官网</a>
+                <a href="https://www.realme.com/cn" target="_blank">realme官网</a>
+                <a href="https://www.amd.com/zh-hans" target="_blank">AMD中国</a>
+                <a href="https://www.intel.cn" target="_blank">英特尔中国</a>
+                <a href="https://www.nvidia.cn" target="_blank">NVIDIA中国</a>
+                <!-- 更多数码链接... -->
+            </div>
+        </div>
+
+        <!-- 科技媒体 (40站) -->
+        <div class="category tech">
+            <h2>💻 科技媒体</h2>
+            <div class="links">
+                <a href="https://www.36kr.com" target="_blank">36氪</a>
+                <a href="https://www.huxiu.com" target="_blank">虎嗅网</a>
+                <a href="https://www.ifanr.com" target="_blank">爱范儿</a>
+                <a href="https://www.pingwest.com" target="_blank">品玩</a>
+                <a href="https://www.leiphone.com" target="_blank">雷锋网</a>
+                <a href="https://www.ithome.com" target="_blank">IT之家</a>
+                <a href="https://www.geekpark.net" target="_blank">极客公园</a>
+                <a href="https://www.csdn.net" target="_blank">CSDN</a>
+                <a href="https://www.oschina.net" target="_blank">开源中国</a>
+                <a href="https://www.infoq.cn" target="_blank">InfoQ</a>
+                <a href="https://www.guokr.com" target="_blank">果壳网</a>
+                <a href="https://www.kejilie.com" target="_blank">科技猎</a>
+                <a href="https://www.woshipm.com" target="_blank">人人产品经理</a>
+                <a href="https://www.ikanchai.com" target="_blank">砍柴网</a>
+                <a href="https://www.tmtpost.com" target="_blank">钛媒体</a>
+                <!-- 更多科技链接... -->
+            </div>
+        </div>
+
+        <!-- AI工具 (35站) -->
+        <div class="category ai">
+            <h2>🤖 AI工具</h2>
+            <div class="links">
+                <a href="https://www.6pen.art" target="_blank">6pen AI绘画</a>
+                <a href="https://yiyan.baidu.com" target="_blank">文心一言</a>
+                <a href="https://tongyi.aliyun.com" target="_blank">通义千问</a>
+                <a href="https://www.moonshot.cn" target="_blank">月之暗面</a>
+                <a href="https://deepseek.com" target="_blank">深度求索</a>
+                <a href="https://www.sensetime.com" target="_blank">商汤科技</a>
+                <a href="https://www.iflytek.com" target="_blank">科大讯飞</a>
+                <a href="https://www.remove.bg" target="_blank">AI抠图工具</a>
+                <a href="https://waifu2x.udp.jp" target="_blank">图片无损放大</a>
+                <a href="https://www.bigjpg.com" target="_blank">AI图片修复</a>
+                <a href="https://www.copilot.microsoft.com" target="_blank">微软Copilot</a>
+                <a href="https://www.midjourney.com" target="_blank">Midjourney</a>
+                <a href="https://www.runwayml.com" target="_blank">Runway视频生成</a>
+                <a href="https://www.descript.com" target="_blank">AI视频编辑</a>
+                <a href="https://www.suno.ai" target="_blank">AI音乐生成</a>
+                <!-- 更多AI链接... -->
+            </div>
+        </div>
+
+        <!-- 游戏娱乐 (35站) -->
+        <div class="category game">
+            <h2>🎮 游戏娱乐</h2>
+            <div class="links">
+                <a href="https://www.3dmgame.com" target="_blank">3DM游戏</a>
+                <a href="https://www.taptap.cn" target="_blank">TapTap</a>
+                <a href="https://www.bilibili.com" target="_blank">哔哩哔哩游戏</a>
+                <a href="https://www.douyu.com" target="_blank">斗鱼直播</a>
+                <a href="https://www.huya.com" target="_blank">虎牙直播</a>
+                <a href="https://www.wegame.com.cn" target="_blank">WeGame</a>
+                <a href="https://www.gamersky.com" target="_blank">游民星空</a>
+                <a href="https://www.17173.com" target="_blank">17173游戏</a>
+                <a href="https://www.ali213.net" target="_blank">游侠网</a>
+                <a href="https://www.a9vg.com" target="_blank">A9VG电玩</a>
+                <a href="https://www.vgtime.com" target="_blank">游戏时光</a>
+                <a href="https://www.chuapp.com" target="_blank">触乐网</a>
+                <a href="https://www.gcores.com" target="_blank">机核网</a>
+                <a href="https://www.yystv.cn" target="_blank">游研社</a>
+                <a href="https://www.steampowered.com" target="_blank">Steam平台</a>
+                <!-- 更多游戏链接... -->
+            </div>
+        </div>
+		© 2003-2025 sinodigi.com 游戏 数码 科技 AI
+    </div>
+
+    <script>
+        // 自动折叠/展开分类
+        document.querySelectorAll('h2').forEach(header => {
+            header.addEventListener('click', () => {
+                const links = header.parentElement.querySelector('.links');
+                links.style.display = links.style.display === 'none' ? 'grid' : 'none';
+            });
+        });
+
+        // 自动暗黑模式
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.style.background = '#2d3436';
+            document.body.style.color = '#fff';
+            document.querySelectorAll('.category').forEach(el => {
+                el.style.background = '#353b48';
+            });
+        }
+    </script>
+</body>
+</html>
